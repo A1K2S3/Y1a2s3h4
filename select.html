@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+        
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: aqua;
+    }
+    .form-control{
+        width:13%;
+        height:25%;
+    }
+    .scheme{
+        margin-top:3%;
+        margin-left:10%;
+        margin-bottom:9%;
+        border:2px solid blue;
+        box-shadow: 0 3px 10px rgb(204, 204,204);
+       cursor: pointer;
+        color: blue;
+    }
+    .semester{
+        margin-left:10%;
+        margin-bottom:30%;
+            
+    }
+    .year{
+        margin-top:-20%;
+        margin-left:10%;
+            
+    }
+    
+    .scheme1{
+        padding:10px;
+       /* margin-left:25%; */
+       color:blue;
+       border:2px solid blue;
+       border-radius:5px;
+       font-size: 20px;
+       /* margin-top:10%; */
+       box-shadow: 0 5px 25px rgb(121, 121, 121);
+       cursor: pointer;
+       outline:none;
+    }
+    .box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    
+    .box select{
+       -webkit-appearance: button;
+        width: 200px;
+        height: 50px;
+    }
+    
+    .box:before{
+        content: "\f103";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 48px;
+        height: 48px;
+        background:rgb(53, 53, 245);
+        text-align: center;
+        line-height: 50px;
+        color:cyan;
+        font-size: 25px;
+        pointer-events: none;
+       
+    }
+    .box:hover:before{
+        background: rgb(42, 106, 224);
+        cursor: pointer;
+    }
+
+    /* .scheme1 *, .semester1 *, .year1 *{
+       border-radius:10px;
+       background-color: rgb(232, 232, 243);
+
+    } */
+    
+    .semester1{
+        margin-left:5%;
+        color:blue;
+       border:2px solid blue;
+       border-radius:5px;
+          box-shadow: 0 5px 25px rgb(121, 121, 121);
+       cursor: pointer;   
+         font-size: 20px;
+       outline:none;
+
+    }
+    .box1{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%,-50%);
+    }
+.box1 select{
+       -webkit-appearance: button;
+       padding-left: 9px;
+        width: 180px;
+        height: 50px;
+    }
+.box1:before{
+        content: "\f103";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        top: 0;
+        right: -7px;
+        width: 48px;
+        height: 48px;
+        background:rgb(53, 53, 245);
+        text-align: center;
+        line-height: 50px;
+        color:cyan;
+        font-size: 25px;
+        pointer-events: none;
+       
+    }
+    .box1:hover:before{
+        background: rgb(42, 106, 224);
+        cursor: pointer;
+    }
+    .year1{
+       margin-left:5%;
+       color:blue;
+       border:2px solid blue;
+       border-radius:5px;
+       box-shadow: 0 5px 25px rgb(121, 121, 121);
+       cursor: pointer;
+       font-size: 20px;
+       outline:none;
+
+
+
+    }
+    .box2{
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%,-50%);
+    }
+.box2 select{
+       -webkit-appearance: button;
+       padding-left: 9px;
+        width: 180px;
+        height: 50px;
+    }
+.box2:before{
+        content: "\f103";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        top: 0;
+        right: -7px;
+        width: 48px;
+        height: 48px;
+        background:rgb(53, 53, 245);
+        text-align: center;
+        line-height: 50px;
+        color:cyan;
+        font-size: 25px;
+        pointer-events: none;
+       
+    }
+    .box2:hover:before{
+        background: rgb(42, 106, 224);
+        cursor: pointer;
+    }
+    
+</style>
+  <body>
+      <!-- SELECT USING BOOSTRAP -->
+    
+    <!-- <div class="container">        
+        <select class="form-control scheme rounded">
+            <option value="SCHEME">SCHEME</option>
+            <option value="I SCHEME">I SCHEME</option>
+            <option value="G SCHEME">G SCHEME</option>
+            <option value=""></option>
+        </select>
+    
+    <select class="form-control semester">
+            <option value="SEMESTER">SEMESTER</option>
+            <option value="Ist SEMESTER">Ist SEMESTER</option>
+            <option value="IInd SEMESTER">IInd SEMESTER</option>
+            <option value="IIIrd SEMESTER">IIIrd SEMESTER</option>
+            <option value="IVth SEMESTER">IVth SEMESTER</option>
+            <option value="Vth SEMESTER">Vth SEMESTER</option>
+            <option value="VIth SEMESTER">VIth SEMESTER</option>
+        </select>
+    <select class="form-control year">
+            <option value="Year">Year</option>
+            <option value="I SCHEME">I SCHEME</option>
+            <option value="G SCHEME">G SCHEME</option>
+            <option value=""></option>
+         </select>  -->
+
+<!-- SELECT WITHOUT USING BOOSTRAP  -->
+<div class="box">
+        <select class="scheme1">
+            <option  value="SCHEME">SCHEME</option>
+            <option  value="I SCHEME">I SCHEME</option>
+            <option  class="rounded" value="G SCHEME">G SCHEME</option>
+             <!-- <option value=""></option>  -->
+         </select> 
+    </div>
+    <div class="box1">
+    <select class="semester1">
+            <option  value="SEMESTER">SEMESTER</option>
+            <option value="Ist SEMESTER">Ist SEMESTER</option>
+            <option value="IInd SEMESTER">IInd SEMESTER</option>
+            <option value="IIIrd SEMESTER">IIIrd SEMESTER</option>
+            <option value="IVth SEMESTER">IVth SEMESTER</option>
+            <option value="Vth SEMESTER">Vth SEMESTER</option>
+            <option value="VIth SEMESTER">VIth SEMESTER</option>
+        </select>
+        </div>
+
+        <div class="box2">
+        <select class="year1">
+            <option value="Year">Year</option>
+            <option value="S14">S14</option>
+            <option value="W14">W14</option> 
+            <option value="S15">S15</option> 
+            <option value="W15">W15</option> 
+            <option value="S16">S16</option> 
+            <option value="W16">W16</option> 
+            <option value=""></option> 
+         </select> 
+        </div>
+    
+
+  </body>
+</html>
